@@ -1,0 +1,140 @@
+@font-face { 
+    font-family: 'BL'; 
+    src: url('Mark\ Simonson\ -\ Proxima\ Nova\ Black.otf') format('woff2');
+  } 
+    
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+body {
+    background: #070506 url("../StarWars/img/main-bg.png") top right 90% no-repeat;
+
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1060px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+}
+.header-logo {
+    margin-right: 70px;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+.hero__subtitle {
+    display: block;
+    margin-top: 78px;
+    font-size: 40px;
+    line-height: 100%;
+    font-family: 'BL', sans-serif;
+}
+.hero__title {
+    margin-top: 5px;
+    font-size: 64px;
+    line-height: 78px;
+    font-family: 'BL', sans-serif;
+    margin-bottom: 25px;
+}
+.hero-text {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 572px;
+    color: #AFAFAF;
+}
+.hero-premier {
+    font-size: 18px;
+    line-height: 150%;
+    color: #B02000;
+    display: block; 
+    margin-bottom: 5px;
+}
+.hero-date {
+    font-size: 24px;
+    line-height: 150%;
+    display: block;
+    margin-bottom: 46px;
+}
+.button-play {
+    border: none;
+    background: linear-gradient(90deg, #FB641A 0%, #FC3309 100%);
+    border-radius: 300px;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 80px;
+    padding-left: 35px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+.button-play:after {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: white url("../StarWars/img/play.svg") center no-repeat;
+    border-radius: 50%;
+    display: block;
+    right: 0;
+    top: 0;
+}
+.button-play:before {
+    content: "";
+    width: 81px;
+    height: 81px;
+    background-color:  rgba(255, 255, 255, 0.3);
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    border-radius: 50%;
+}
+.episodes {
+    padding: 60px 0;
+}
+.episodes-title {
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 24px;
+}
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+}
+.slider-item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    min-height: 200px;
+    background:  rgba(80, 80, 80, 0.86);
+    box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    transition: all 0.2s;
+}
+.slider-item:hover {
+    background: rgba(64, 101, 255, 0.86);
+}
+.slider-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
